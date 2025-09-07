@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CheckIcon } from "@heroicons/react/24/outline";
 
 export const metadata = {
   title: "About Our Practice",

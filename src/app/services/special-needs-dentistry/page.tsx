@@ -218,8 +218,8 @@ export default function SpecialNeedsDentistryPage() {
                 <div className="bg-amber-50 p-6 rounded-lg border border-amber-200">
                   <h3 className="text-lg font-normal text-amber-800 mb-3">Patient Feedback</h3>
                   <blockquote className="text-amber-700 text-sm leading-relaxed mb-3">
-                    "I frequent them often for dental services they provide my clients. Every staff is positive and caring, 
-                    often times beyond the norm. It is nice to have a relationship with them. They also provide great dental care for my clients!"
+                    &ldquo;I frequent them often for dental services they provide my clients. Every staff is positive and caring, 
+                    often times beyond the norm. It is nice to have a relationship with them. They also provide great dental care for my clients!&rdquo;
                   </blockquote>
                   <cite className="text-amber-600 text-xs font-medium">— Shannon B., Patient Caregiver</cite>
                 </div>

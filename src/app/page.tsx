@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRightIcon, StarIcon, PlayIcon } from "@heroicons/react/24/outline";
+import { PlayIcon } from "@heroicons/react/24/outline";
 
 export default function Home() {
   return (
@@ -56,7 +56,7 @@ export default function Home() {
             Excellence in Special Needs Dentistry in the Nashville Area
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-8">
-            At Michael D. Vaughan, DDS, we're committed to providing our patients with quality services and care. We set the highest 
+            At Michael D. Vaughan, DDS, we&apos;re committed to providing our patients with quality services and care. We set the highest 
             standards of patient care and support by leveraging our experience, diverse skill set, and knowledge base.
           </p>
           <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-12">
@@ -179,7 +179,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
-              <div className="text-6xl text-gray-300 mb-4">"</div>
+              <div className="text-6xl text-gray-300 mb-4">&ldquo;</div>
               <blockquote className="text-2xl lg:text-3xl font-normal text-gray-900 mb-6 leading-relaxed">
                 I highly recommend this dental practice to anyone looking for reliable procedures. The entire team is professional, friendly, and highly efficient...
               </blockquote>

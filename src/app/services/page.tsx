@@ -107,7 +107,7 @@ export default function ServicesPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
+            {services.map((service) => (
               <div key={service.title} className="bg-white rounded-lg border border-gray-200 p-8 text-center hover:shadow-lg transition-shadow">
                 {/* Icon Circle */}
                 <div className="w-24 h-24 bg-amber-50 rounded-full flex items-center justify-center mx-auto mb-6">
