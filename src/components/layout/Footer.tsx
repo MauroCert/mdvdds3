@@ -76,7 +76,7 @@ export default function Footer() {
                 </Link>
                 <Link href="https://www.healthgrades.com/dentist/dr-michael-vaughan-xg64s" className="text-gray-400 hover:text-white transition-colors">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 0C5.374 0 0 5.373 0 12s5.374 12 12 12 12-5.373 12-12S18.626 0 12 0zm5.568 13.8h-3.924v7.2h-3.288V13.8H6.432V10.8h3.924V8.4c0-3.264 1.992-5.04 4.896-5.04.96 0 1.968.072 2.208.096v2.52h-1.512c-1.176 0-1.416.564-1.416 1.38v1.584h2.808l-.36 3z"/>
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                   </svg>
                 </Link>
                 <Link href="https://www.linkedin.com/in/michael-vaughan-dds-fagd-76b96312/" className="text-gray-400 hover:text-white transition-colors">

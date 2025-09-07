@@ -110,15 +110,22 @@ export default function Header() {
               <div key={item.name} className="relative">
                 {item.submenu ? (
                   <div className="relative">
-                    <button
-                      onClick={() => setActiveDropdown((s) => (s === item.name ? null : item.name))}
-                      className={`flex items-center text-sm font-normal text-gray-700 hover:text-teal-600 uppercase tracking-wide ${
-                        isActive(item.href) ? "text-teal-600" : ""
-                      }`}
-                    >
-                      {item.name}
-                      <ChevronDownIcon className={`ml-1 h-3 w-3 transition-transform ${activeDropdown === item.name ? "rotate-180" : ""}`} />
-                    </button>
+                    <div className="flex items-center">
+                      <Link
+                        href={item.href}
+                        className={`text-sm font-normal text-gray-700 hover:text-teal-600 uppercase tracking-wide ${
+                          isActive(item.href) ? "text-teal-600" : ""
+                        }`}
+                      >
+                        {item.name}
+                      </Link>
+                      <button
+                        onClick={() => setActiveDropdown((s) => (s === item.name ? null : item.name))}
+                        className="ml-1 p-1 text-gray-700 hover:text-teal-600"
+                      >
+                        <ChevronDownIcon className={`h-3 w-3 transition-transform ${activeDropdown === item.name ? "rotate-180" : ""}`} />
+                      </button>
+                    </div>
                     {activeDropdown === item.name && (
                       <div className="absolute top-full left-0 mt-1 w-56 bg-white shadow-xl border border-gray-100 py-1 z-50">
                         {item.submenu.map((sub) => (
