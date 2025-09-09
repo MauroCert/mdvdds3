@@ -32,9 +32,9 @@ export default function SpecialNeedsDentistryPage() {
       {/* Main Content - OMS Nashville Article Style */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="max-w-4xl mx-auto">
             {/* Main Content */}
-            <div className="lg:col-span-2">
+            <div>
               {/* Introduction */}
               <div className="mb-12">
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
@@ -159,86 +159,6 @@ export default function SpecialNeedsDentistryPage() {
                 >
                   Schedule Consultation
                 </Link>
-              </div>
-            </div>
-
-            {/* Sidebar - OMS Nashville Style */}
-            <div className="lg:col-span-1">
-              <div className="space-y-8">
-                {/* Contact Card */}
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-normal text-gray-900 mb-4">Contact Information</h3>
-                  <div className="space-y-3 text-gray-700">
-                    <div>
-                      <p className="font-medium">Phone</p>
-                      <Link href="tel:+16159156090" className="text-teal-600 hover:text-teal-700">
-                        (615) 915-6090
-                      </Link>
-                    </div>
-                    <div>
-                      <p className="font-medium">Office Location</p>
-                      <p className="text-sm">330 Wallace Rd. #106<br/>Nashville, TN 37211</p>
-                    </div>
-                    <div>
-                      <p className="font-medium">Office Hours</p>
-                      <p className="text-sm">Monday - Friday: 7:30 AM–4 PM<br/>Saturday & Sunday: Closed</p>
-                    </div>
-                  </div>
-                  <Link 
-                    href="/contact"
-                    className="inline-block w-full text-center bg-teal-600 text-white px-6 py-3 rounded-full font-medium hover:bg-teal-700 transition-colors mt-4"
-                  >
-                    Contact Us
-                  </Link>
-                </div>
-
-                {/* Related Services */}
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-normal text-gray-900 mb-4">Related Services</h3>
-                  <div className="space-y-3">
-                    <Link href="/services/sedation-dentistry" className="block text-teal-600 hover:text-teal-700 transition-colors">
-                      Sedation Dentistry
-                    </Link>
-                    <Link href="/services/dental-exams-cleanings" className="block text-teal-600 hover:text-teal-700 transition-colors">
-                      Dental Exams & Cleanings
-                    </Link>
-                    <Link href="/services/root-canals" className="block text-teal-600 hover:text-teal-700 transition-colors">
-                      Root Canals
-                    </Link>
-                    <Link href="/services/dentures" className="block text-teal-600 hover:text-teal-700 transition-colors">
-                      Dentures
-                    </Link>
-                    <Link href="/services/extractions" className="block text-teal-600 hover:text-teal-700 transition-colors">
-                      Extractions
-                    </Link>
-                  </div>
-                </div>
-
-                {/* Testimonial */}
-                <div className="bg-amber-50 p-6 rounded-lg border border-amber-200">
-                  <h3 className="text-lg font-normal text-amber-800 mb-3">Patient Feedback</h3>
-                  <blockquote className="text-amber-700 text-sm leading-relaxed mb-3">
-                    &ldquo;I frequent them often for dental services they provide my clients. Every staff is positive and caring, 
-                    often times beyond the norm. It is nice to have a relationship with them. They also provide great dental care for my clients!&rdquo;
-                  </blockquote>
-                  <cite className="text-amber-600 text-xs font-medium">— Shannon B., Patient Caregiver</cite>
-                </div>
-
-                {/* Additional Info */}
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-normal text-gray-900 mb-4">Additional Information</h3>
-                  <div className="space-y-3">
-                    <Link href="/patient-forms" className="block text-teal-600 hover:text-teal-700 transition-colors">
-                      Patient Forms
-                    </Link>
-                    <Link href="/faqs" className="block text-teal-600 hover:text-teal-700 transition-colors">
-                      Frequently Asked Questions
-                    </Link>
-                    <Link href="/about" className="block text-teal-600 hover:text-teal-700 transition-colors">
-                      About Dr. Vaughan
-                    </Link>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

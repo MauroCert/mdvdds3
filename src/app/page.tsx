@@ -8,7 +8,7 @@ export default function Home() {
       {/* Hero - OMS Nashville Style */}
       <section className="relative h-screen bg-gray-900 text-white overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/Details/_DSC4063.JPG" alt="Dental office" fill className="object-cover" priority />
+          <Image src="/Interactions/_DSC4059.JPG" alt="Dental office" fill className="object-cover" priority />
           <div className="absolute inset-0 bg-black/40" />
         </div>
         
@@ -16,34 +16,42 @@ export default function Home() {
           {/* Logo */}
           <div className="mb-8">
             <div className="flex items-center space-x-4 text-white">
-              <div className="w-12 h-12 bg-white/20 rounded"></div>
+              <div className="w-20 h-20 bg-white/30 rounded border border-white/40 backdrop-blur-sm flex items-center justify-center p-3">
+                <Image 
+                  src="/images/logo.png" 
+                  alt="Michael D. Vaughan, DDS Logo" 
+                  width={56} 
+                  height={56} 
+                  className="w-full h-full object-contain"
+                />
+              </div>
               <div>
-                <h1 className="text-3xl font-normal">Michael D. Vaughan, DDS</h1>
-                <p className="text-lg text-white/90">SPECIAL NEEDS & SEDATION DENTISTRY</p>
+                <h1 className="text-3xl font-medium text-white drop-shadow-2xl" style={{textShadow: '2px 2px 8px rgba(0,0,0,0.8), 0 0 16px rgba(0,0,0,0.5)'}}>Michael D. Vaughan, DDS</h1>
+                <p className="text-lg text-white font-medium drop-shadow-xl" style={{textShadow: '1px 1px 6px rgba(0,0,0,0.8), 0 0 12px rgba(0,0,0,0.4)'}}>SPECIAL NEEDS & SEDATION DENTISTRY</p>
               </div>
             </div>
           </div>
 
           {/* Play Button */}
-          <button className="flex items-center justify-center w-16 h-16 bg-white/20 rounded-full border-2 border-white/50 hover:bg-white/30 transition-all mb-12">
-            <PlayIcon className="w-6 h-6 ml-1" />
+          <button className="flex items-center justify-center w-16 h-16 bg-white/30 rounded-full border-2 border-white/60 hover:bg-white/40 hover:border-white/80 transition-all mb-12 backdrop-blur-sm drop-shadow-lg">
+            <PlayIcon className="w-6 h-6 ml-1 text-white drop-shadow-md" />
           </button>
 
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 text-center max-w-4xl">
             <div>
-              <div className="text-4xl md:text-5xl font-light text-teal-300 mb-2">1,000+</div>
-              <div className="text-sm md:text-base text-white/80 uppercase tracking-wide">Special Needs Patients Served</div>
+              <div className="text-4xl md:text-5xl font-light text-white mb-2 drop-shadow-2xl" style={{textShadow: '2px 2px 8px rgba(0,0,0,0.9), 0 0 16px rgba(0,0,0,0.6)'}}>1,000+</div>
+              <div className="text-sm md:text-base text-white font-medium uppercase tracking-wide drop-shadow-xl" style={{textShadow: '1px 1px 6px rgba(0,0,0,0.8)'}}>Special Needs Patients Served</div>
             </div>
             <div className="relative">
-              <div className="hidden md:block absolute left-0 top-0 bottom-0 w-px bg-white/30"></div>
-              <div className="text-4xl md:text-5xl font-light text-teal-300 mb-2">1</div>
-              <div className="text-sm md:text-base text-white/80 uppercase tracking-wide">Convenient Location</div>
-              <div className="hidden md:block absolute right-0 top-0 bottom-0 w-px bg-white/30"></div>
+              <div className="hidden md:block absolute left-0 top-0 bottom-0 w-px bg-white/40 drop-shadow-sm"></div>
+              <div className="text-4xl md:text-5xl font-light text-white mb-2 drop-shadow-2xl" style={{textShadow: '2px 2px 8px rgba(0,0,0,0.9), 0 0 16px rgba(0,0,0,0.6)'}}>1</div>
+              <div className="text-sm md:text-base text-white font-medium uppercase tracking-wide drop-shadow-xl" style={{textShadow: '1px 1px 6px rgba(0,0,0,0.8)'}}>Convenient Location</div>
+              <div className="hidden md:block absolute right-0 top-0 bottom-0 w-px bg-white/40 drop-shadow-sm"></div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-light text-teal-300 mb-2">25+ Years</div>
-              <div className="text-sm md:text-base text-white/80 uppercase tracking-wide">of Specialized Experience</div>
+              <div className="text-4xl md:text-5xl font-light text-white mb-2 drop-shadow-2xl" style={{textShadow: '2px 2px 8px rgba(0,0,0,0.9), 0 0 16px rgba(0,0,0,0.6)'}}>25+ Years</div>
+              <div className="text-sm md:text-base text-white font-medium uppercase tracking-wide drop-shadow-xl" style={{textShadow: '1px 1px 6px rgba(0,0,0,0.8)'}}>of Specialized Experience</div>
             </div>
           </div>
         </div>
