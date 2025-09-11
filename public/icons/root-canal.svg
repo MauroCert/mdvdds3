@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Tooth outline -->
+  <path d="M32 10c8 0 14 6 14 14 0 8-4 14-7 21-1.7 3.7-2.2 9-5 9s-3.3-5.3-5-9c-3-7-7-13-7-21 0-8 6-14 14-14z"/>
+  <!-- Pulp/chamber -->
+  <path d="M27 24c1.8 1.6 8.2 1.6 10 0"/>
+  <!-- Canal -->
+  <path d="M32 26v15"/>
+</svg>
+

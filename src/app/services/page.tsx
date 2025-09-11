@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+// No external icon libraries; use inline dental-specific SVGs
 
 export const metadata = {
-  title: "Procedures",
+  title: "Our Dental Services",
 };
 
 // Service Icons - Simple SVG components to match OMS Nashville style
@@ -24,23 +25,7 @@ const ExamIcon = () => (
   </svg>
 );
 
-const RootCanalIcon = () => (
-  <svg className="w-16 h-16 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-  </svg>
-);
-
-const DentureIcon = () => (
-  <svg className="w-16 h-16 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.01M15 10h1.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-  </svg>
-);
-
-const ExtractionIcon = () => (
-  <svg className="w-16 h-16 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-  </svg>
-);
+// Dental icons are sourced as SVG files under /public/icons for crisp rendering
 
 export default function ServicesPage() {
   const services = [
@@ -65,19 +50,19 @@ export default function ServicesPage() {
     {
       title: "Root Canals",
       description: "Endodontic treatment to save infected or severely damaged teeth, performed with specialized techniques for patients with special needs and sedation options available.",
-      icon: <RootCanalIcon />,
+      icon: <Image src="/icons/root-canal.svg" alt="Root canal icon" width={64} height={64} />,
       href: "/services/root-canals",
     },
     {
       title: "Dentures",
       description: "Complete and partial dentures designed and fitted with extra care for patients with special needs, ensuring proper fit and comfort for enhanced quality of life.",
-      icon: <DentureIcon />,
+      icon: <Image src="/icons/dentures.svg" alt="Dentures icon" width={64} height={64} />,
       href: "/services/dentures",
     },
     {
       title: "Extractions",
       description: "Tooth extractions performed with specialized techniques and sedation options to ensure patient comfort, particularly for those with dental anxiety or special needs.",
-      icon: <ExtractionIcon />,
+      icon: <Image src="/icons/extraction.svg" alt="Extraction icon" width={64} height={64} />,
       href: "/services/extractions",
     },
   ];
@@ -89,11 +74,11 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl lg:text-5xl font-normal text-amber-700 mb-6">Procedures</h1>
+              <h1 className="text-4xl lg:text-5xl font-normal text-amber-700 mb-6">Our Dental Services</h1>
               <div className="text-sm text-gray-600 mb-6">
                 <Link href="/" className="hover:text-amber-700">Home</Link>
                 <span className="mx-2">/</span>
-                <span>Procedures</span>
+                <span>Our Dental Services</span>
               </div>
             </div>
             <div className="relative h-64 lg:h-80">

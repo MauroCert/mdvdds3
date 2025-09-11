@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Forceps arms -->
+  <path d="M20 48l12-12"/>
+  <path d="M44 48L32 36"/>
+  <!-- Tooth being held -->
+  <path d="M30 30c0-3 2-6 6-6 2 0 4 1 5 3l-5 5-6-2z"/>
+  <!-- Pivot/hinge -->
+  <circle cx="32" cy="36" r="3"/>
+</svg>
+

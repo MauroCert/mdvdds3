@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,6 +8,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Section */}
           <div>
+            <div className="mb-6">
+              <Image
+                src="/images/logo.png"
+                alt="Michael D. Vaughan, DDS Logo"
+                width={120}
+                height={120}
+                className="w-full h-auto max-w-[120px] brightness-0 invert"
+              />
+            </div>
             <h3 className="text-white font-medium mb-4">About</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/about" className="hover:text-white transition-colors">About Our Practice</Link></li>

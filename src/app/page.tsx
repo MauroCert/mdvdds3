@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { PlayIcon } from "@heroicons/react/24/outline";
+import { PlayIcon, SparklesIcon, UserGroupIcon, HeartIcon } from "@heroicons/react/24/outline";
 
 export default function Home() {
   return (
@@ -13,23 +13,10 @@ export default function Home() {
         </div>
         
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
-          {/* Logo */}
-          <div className="mb-8">
-            <div className="flex items-center space-x-4 text-white">
-              <div className="w-20 h-20 bg-white/30 rounded border border-white/40 backdrop-blur-sm flex items-center justify-center p-3">
-                <Image 
-                  src="/images/logo.png" 
-                  alt="Michael D. Vaughan, DDS Logo" 
-                  width={56} 
-                  height={56} 
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <div>
-                <h1 className="text-3xl font-medium text-white drop-shadow-2xl" style={{textShadow: '2px 2px 8px rgba(0,0,0,0.8), 0 0 16px rgba(0,0,0,0.5)'}}>Michael D. Vaughan, DDS</h1>
-                <p className="text-lg text-white font-medium drop-shadow-xl" style={{textShadow: '1px 1px 6px rgba(0,0,0,0.8), 0 0 12px rgba(0,0,0,0.4)'}}>SPECIAL NEEDS & SEDATION DENTISTRY</p>
-              </div>
-            </div>
+          {/* Practice Name */}
+          <div className="mb-8 text-center">
+            <h1 className="text-3xl font-medium text-white drop-shadow-2xl" style={{textShadow: '2px 2px 8px rgba(0,0,0,0.8), 0 0 16px rgba(0,0,0,0.5)'}}>Michael D. Vaughan, DDS</h1>
+            <p className="text-lg text-white font-medium drop-shadow-xl" style={{textShadow: '1px 1px 6px rgba(0,0,0,0.8), 0 0 12px rgba(0,0,0,0.4)'}}>SPECIAL NEEDS & SEDATION DENTISTRY</p>
           </div>
 
           {/* Play Button */}
@@ -73,14 +60,23 @@ export default function Home() {
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="flex items-center justify-center text-gray-700">
-              <span>• A high-comfort setting featuring the latest technology</span>
+            <div className="text-center">
+              <div className="flex justify-center mb-4">
+                <SparklesIcon className="w-12 h-12 text-amber-600" />
+              </div>
+              <span className="text-gray-700">A high-comfort setting featuring the latest technology</span>
             </div>
-            <div className="flex items-center justify-center text-gray-700">
-              <span>• A team of experienced, professional, and friendly staff</span>
+            <div className="text-center">
+              <div className="flex justify-center mb-4">
+                <UserGroupIcon className="w-12 h-12 text-amber-600" />
+              </div>
+              <span className="text-gray-700">A team of experienced, professional, and friendly staff</span>
             </div>
-            <div className="flex items-center justify-center text-gray-700">
-              <span>• Quality of service, excellence, and your comfort are our top priorities</span>
+            <div className="text-center">
+              <div className="flex justify-center mb-4">
+                <HeartIcon className="w-12 h-12 text-amber-600" />
+              </div>
+              <span className="text-gray-700">Quality of service, excellence, and your comfort are our top priorities</span>
             </div>
           </div>
 
@@ -91,29 +87,29 @@ export default function Home() {
       </section>
 
       {/* Our Doctor Listens & Deeply Care - OMS Style */}
-      <section className="py-20 bg-teal-700 text-white relative overflow-hidden">
+      <section className="py-20 bg-slate-900 text-white relative overflow-hidden">
         <div className="absolute inset-0">
           <Image src="/Interactions/_DSC4116.JPG" alt="Our team" fill className="object-cover" />
-          <div className="absolute inset-0 bg-teal-900/80" />
+          <div className="absolute inset-0 bg-slate-900/70" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="text-lg text-teal-200 mb-4">Our</div>
-              <h2 className="text-5xl font-normal mb-4">
+              <div className="text-lg text-amber-400 mb-4 font-medium">Our</div>
+              <h2 className="text-5xl font-normal mb-4 text-white">
                 Doctor
                 <br />
-                <span className="italic">Listens & Deeply</span>
+                <span className="italic text-amber-300">Listens & Deeply</span>
                 <br />
                 Care
               </h2>
             </div>
             <div>
-              <h3 className="text-xl font-normal text-white mb-6">
+              <h3 className="text-xl font-normal text-white mb-6 leading-relaxed">
                 Our highly trained staff is chosen for their compassion in addition to their skills
               </h3>
-              <p className="text-lg text-teal-100 leading-relaxed">
-                We have a team of highly trained and experienced professionals who genuinely want to improve your health and wellbeing. 
+              <p className="text-lg text-slate-200 leading-relaxed">
+                We have a team of highly trained and experienced professionals who genuinely want to improve your health and wellbeing.
                 We have earned a reputation for employing amazing staff who are not only skilled, but also highly compassionate.
               </p>
             </div>
@@ -121,26 +117,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Doctor Profile */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-block">
-              <div className="w-48 h-48 mx-auto rounded-full overflow-hidden shadow-lg mb-6">
-                <Image src="/Headshots/e3_DSC4189.JPG" alt="Dr. Michael D. Vaughan" width={192} height={192} className="w-full h-full object-cover object-top" />
-              </div>
-              <h3 className="text-2xl font-normal text-gray-900 mb-2">Dr. Michael D. Vaughan</h3>
-              <Link href="/about" className="text-teal-600 hover:text-teal-700 font-medium">
-                Meet Your Doctor
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Featured Services Cards */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-normal text-gray-900 mb-6">
+              Our Services
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              Comprehensive dental care tailored to meet your unique needs, from special needs dentistry to sedation options and general dental services.
+            </p>
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {[
               {
@@ -185,6 +173,14 @@ export default function Home() {
       {/* Testimonial Quote - OMS Style */}
       <section className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-normal text-gray-900 mb-6">
+              Our Patients Testimonials
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              Hear from our patients about their experiences with our compassionate care and specialized dental services.
+            </p>
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <div className="text-6xl text-gray-300 mb-4">&ldquo;</div>
